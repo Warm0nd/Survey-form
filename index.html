@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Form</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <h1 id="title">Опрос</h1>
+  <div id="mainForm">
+    <p id="description"></p>
+    Пройдите короткий опрос и помогите нам <br> улучшить наш сайт для поиска работы
+    <p>
+      <form id="survey-form" method="get" action="/usable url">
+        <div class="leftLabels">
+         <label id="name-label" for="name">* Имя:</label>
+         </div>
+         <div class="rightForms">
+           <input class="information" type="text" autofocus name="name" id="name" placeholder="Введите ваше имя" required>
+         </div>
+         <div class="leftLabels">
+         <label id="email-label" for="email">* Email:</label>
+        </div>
+        <div class="rightForms">
+         <input class="information" type="text" autofocus name="email" id="email" placeholder="Введите ваш Email" required>
+         </div>
+         <div class="leftLabels">
+           <label id="number-label" for="number">* Возраст:</label>
+        </div>
+          <div class="rightForms">
+           <input class="information" type="number" autofocus name="number" id="number" min="16" max="250" placeholder="Введите свой возраст">
+         </div>
+        <br>
+        <br>
+        <div class="leftLabels">
+          <label  id="currentRole" for="role">Ваша текущая роль:</label>
+        </div>
+        <div class="rightForms">
+        <select id="dropdown" name="role">
+          <option disabled value selected>Выберите
+          </option>
+          <option value="student">Студент</option>
+          <option value="withoutJob">Безработный</option>
+          <option value="part-time">Работаю на полставки</option>
+          <option value="full-time">Работаю на полной ставке</option>
+          <option value="other">Другое</option>
+          </select>
+          </div>
+        <br>
+        <br>
+        <div class="leftLabels">
+          <label id="recommend-label" for="recommend">Порекомендуете ли наш сайт своим знакомым?</label>
+        </div>
+        <div class="rightForms">
+          <ul id="firstUl" style="list-style: none;">
+            <li><label><input class="recommend" name="radio-buttons" type="radio" value="1" >Определенно</label></li>
+            <li><label><input class="recommend" name="radio-buttons" type="radio" value="2">Возможно</label></li>
+            <li><label><input class="recommend" name="radio-buttons" type="radio" value="3">Нет</label></li>
+          </ul>
+        </div>
+        <br>
+        <br>
+        <div class="leftLabels">
+          <label id="improve-label"  for="improve">Улучшения, которые вы хотели бы видеть на нашем сайте:</label>
+        </div>
+        <div class="rightForms">
+          <ul id="secondUl" style="list-style: none;">
+            <li><label><input class="improve" name="checkboxes" type="checkbox" value="1" >Форум</label></li>
+            <li><label><input class="improve" name="checkboxes" type="checkbox" value="2" >Расширенный фильтр поиска вакансий</label></li>
+            <li><label><input class="improve" name="checkboxes" type="checkbox" value="3" >Оповещение об откликах работадателей</label></li>
+            <li><label><input class="improve" name="checkboxes" type="checkbox" value="4" >Обратная связь</label></li>
+          </ul>
+        </div>
+        <br>
+        <br>
+        <div class="leftLabels">
+          <label id="comments" for="commentary">Комментарии и пожелания:</label>
+        </div>
+        <div class="rightForms">
+          <textarea id="commentary" name="commentary" placeholder="Напишите ваши комментарии..." style="width:250px;height:70px;"></textarea>
+        </div>
+        <br>
+        <button id="submit" type="submit">Отправить</button>
+    </form>
+</div>
+  
+  
+
+</body>
+
+</html>
